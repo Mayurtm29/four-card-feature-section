@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+main {
+    margin: 2rem;
+}
+
+.heading {
+    color: hsl(229, 6%, 66%);
+    font-weight: 200;
+    margin-bottom: 1rem;
+    inline-size: 500px;
+    overflow-wrap: break-word;
+    margin-inline: auto;
+    text-align: center;
+}
+
+span {
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+}
+
+.headp {
+    color: hsl(229, 6%, 66%);
+    inline-size: 550px;
+    overflow-wrap: break-word;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-inline: auto;
+}
+
+
+
+.items {
+    background-color: hsl(0, 0%, 98%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 10px 10px -5px rgb(218 228 240);
+}
+
+.items h2 {
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.items p {
+    color: hsl(229, 6%, 66%);
+    inline-size: 350px;
+    overflow-wrap: break-word;
+    margin-bottom: 2rem;
+}
+
+.items img {
+    align-self: flex-end;
+}
+
+.supervisor {
+    border-top: 5px solid hsl(180, 62%, 55%);
+    transform: translatey(50%);
+}
+
+.team {
+    border-top: 5px solid hsl(0, 78%, 62%);
+
+}
+
+.karma {
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.calculator {
+    border-top: 5px solid hsl(212, 86%, 64%);
+    transform: translatey(50%);
+}
+
+@media (max-width:1020px) {
+
+    .karma,
+    .calculator,
+    .supervisor {
+        transform: none;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+        inline-size: auto;
+        text-align: center;
+    }
+
+    .headp {
+        font-size: 1rem;
+        inline-size: auto;
+        text-align: center;
+    }
+
+    .items {
+        padding: 1rem;
+    }
+
+    .items p {
+        inline-size: 290px;
+        overflow-wrap: break-word;
+    }
+
+}
