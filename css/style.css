@@ -9,7 +9,7 @@
 
 
 main {
-    margin: 2rem;
+    margin: 2rem auto;
 }
 
 .heading {
@@ -20,6 +20,7 @@ main {
     overflow-wrap: break-word;
     margin-inline: auto;
     text-align: center;
+    padding: 0 1rem;
 }
 
 span {
@@ -37,7 +38,7 @@ span {
 }
 
 .container {
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -49,24 +50,27 @@ span {
 
 
 .items {
+    max-width: 283px;
     background-color: hsl(0, 0%, 98%);
     color: #fff;
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0px 10px 10px -5px rgb(218 228 240);
 }
 
 .items h2 {
+    font-size: 1.25rem;
     color: hsl(234, 12%, 34%);
     font-weight: 600;
     margin-bottom: 1rem;
 }
 
 .items p {
+    font-size: 0.8rem;
     color: hsl(229, 6%, 66%);
-    inline-size: 350px;
+    inline-size: 250px;
     overflow-wrap: break-word;
     margin-bottom: 2rem;
 }
@@ -94,7 +98,7 @@ span {
     transform: translatey(50%);
 }
 
-@media (max-width:1020px) {
+@media (max-width:1000px) {
 
     .karma,
     .calculator,
@@ -121,6 +125,12 @@ span {
     .items p {
         inline-size: 290px;
         overflow-wrap: break-word;
+    }
+
+}
+@media (min-width:500px){
+    .headp{
+        inline-size: 500px;
     }
 
 }
